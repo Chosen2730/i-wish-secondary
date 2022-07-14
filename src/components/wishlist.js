@@ -71,7 +71,7 @@ const WishList = ({ setItems, setPage }) => {
             </div>
             <div
               className='flex flex-col items-center rounded-md shadow-md p-3 cursor-pointer hover:scale-105 transition select-none'
-              // onClick={() => setPage(2)}
+              onClick={() => setPage(6)}
             >
               <img src={send} className='p-2 bg-gray-200 rounded-md' alt='' />
               <h5 className='font-bold text-lg my-3'>Send money</h5>

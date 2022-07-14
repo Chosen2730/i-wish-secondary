@@ -4,6 +4,7 @@ import Product from "./product";
 import Details from "./details";
 import Payment from "./payment";
 import Success from "./success";
+import SendMoney from "./sendMoney";
 
 const Page = () => {
   const [page, setPage] = useState(1);
@@ -15,6 +16,7 @@ const Page = () => {
       {page === 3 && <Details setPage={setPage} items={items} />}
       {page === 4 && <Payment setPage={setPage} items={items} />}
       {page === 5 && <Success setPage={setPage} items={items} />}
+      {page === 6 && <SendMoney setPage={setPage} items={items} />}
     </div>
   );
 };

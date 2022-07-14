@@ -43,14 +43,14 @@ const SendMoney = ({ setPage, items }) => {
           </h4>
           <div className='flex items-center justify-center space-x-4 border-2 rounded-lg w-fit mx-auto p-2 px-8 border-gray-400 select-none'>
             <h4
-              className='text-xl cursor-pointer'
+              className='text-xl cursor-pointer p-2 rounded-md'
               onClick={() => setAmount(amount - 50)}
             >
               -
             </h4>
             <h4 className='text-xl'>{amount}.00</h4>
             <h4
-              className='text-xl cursor-pointer'
+              className='text-xl cursor-pointer p-2 rounded-md'
               onClick={() => setAmount(amount + 100)}
             >
               +

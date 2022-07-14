@@ -48,7 +48,7 @@ const WishList = ({ setItems, setPage }) => {
       <div
         className={`${modal ? "modal" : "modal hider"} overflow text-gray-900`}
       >
-        <div className='bg-white p-4 md:p-12 rounded-md w-[100%] sm:w-[80%] md:w-[65%]'>
+        <div className='bg-white p-4 md:p-12 rounded-md w-[100%] max-w-lg sm:w-[80%] md:w-[65%]'>
           <img
             src={close}
             className='bg-[#7805A7] rounded-md p-2 ml-auto'

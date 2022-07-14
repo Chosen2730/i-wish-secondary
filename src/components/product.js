@@ -62,7 +62,7 @@ const Product = ({ setPage, items }) => {
             })}
           </div>
           <button
-            className={`bg-[#7805A7] w-1/2 transition hover:bg-purple-900 hover:scale-105 px-6 text-sm rounded-lg my-5 text-purple-50 font-semibold py-4`}
+            className={`bg-[#7805A7] w-full transition hover:bg-purple-900 hover:scale-105 px-6 text-sm rounded-lg my-5 text-purple-50 font-semibold py-4`}
             onClick={() => setPage(3)}
           >
             Grant wish

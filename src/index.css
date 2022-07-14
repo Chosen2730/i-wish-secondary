@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  font-family: nunito-sans, sans-serif;
+  background-color: #f5f5f5;
+}
+.modal {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+  padding: 4rem;
+}
+.hider {
+  transform: scale(0);
+}
+.overflow {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.overflow::-webkit-scrollbar {
+  display: none;
+}
+del {
+  text-decoration-style: double;
+}
+@media (max-width: 768px) {
+  .modal {
+    padding: 4rem 1rem;
+  }
+}

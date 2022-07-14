@@ -13,7 +13,7 @@ const Success = ({ setPage }) => {
       </div>
       <h2 className='font-bold text-3xl text-gray-800 my-6'>i-Wish Store</h2>
 
-      <div className='flex flex-col justify-center items-center'>
+      <div className='flex flex-col justify-center items-center mt-20'>
         <img src={star} className='bg-[#FFCC00] p-8 rounded-lg w-48' alt='' />
 
         <h2 className='font-bold my-3 capitalize text-xl'>

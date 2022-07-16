@@ -48,7 +48,7 @@ const Product = ({ setPage, items }) => {
           </h4>
           <h4 className='text-sm'>{desc}</h4>
           <h4 className='font-bold text-lg my-2 mt-3 capitalize'>
-            Available Colors
+            Available Colors.
           </h4>
           <div className='grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 items-center gap-4 my-3'>
             {colors.map((color, i) => {

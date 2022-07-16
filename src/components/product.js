@@ -1,5 +1,6 @@
 import { useState } from "react";
 import back from "../images/back.png";
+import { store } from "../data";
 
 const Product = ({ setPage, items }) => {
   const { img, title, price, colors, desc } = items;
@@ -68,6 +69,38 @@ const Product = ({ setPage, items }) => {
             Grant wish
           </button>
         </div>
+      </div>
+      <h2 className='font-bold text-2xl my-3 mt-10'>Similar Products</h2>
+      <div className='grid gap-4 sm:grid-cols-2 md:grid-cols-4'>
+        {store.map(({ img, title, price, colors, desc }, i) => {
+          return (
+            <div
+              key={i}
+              className='flex flex-col bg-gray-200 bg-gray-200 rounded-md'
+            >
+              <img
+                src={img[0]}
+                className='h-40 object-cover sm:h-32 w-full'
+                alt=''
+              />
+              <div className='p-2'>
+                <h5 className='font-bold text-sm my-2 capitalize'>{title}</h5>
+                <h5 className='font-extrabold text-lg my-2 capitalize'>
+                  <del>N</del> {price}
+                </h5>
+                <button
+                  className='py-3 px-6 my-4 rounded-lg bg-[#7805A7] text-sm text-white  w-full'
+                  onClick={() => {
+                    // setModal(true);
+                    // setItems({ img, title, price, colors, desc });
+                  }}
+                >
+                  Grant Wish
+                </button>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

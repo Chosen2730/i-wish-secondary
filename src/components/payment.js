@@ -70,7 +70,7 @@ const Payment = ({ setPage, items }) => {
         <div className='lg:w-5/6'>
           <h2 className='font-bold text-3xl text-gray-800 my-2'>Checkout</h2>
           <h2 className='font-bold text-lg text-gray-800 '>Payment Method</h2>
-          <div className='flex items-center space-x-4 bg-gradient-to-r from-[#7805A7] via-purple-900 to-purple-600 my-3 p-4 text-gray-50 rounded-md'>
+          <div className='flex items-center space-x-4 bg-gradient-to-r from-[#7805A7] via-purple-900 to-purple-600 my-8 mt-10 p-4 text-gray-50 rounded-md'>
             <img src={pay} alt='card' className='w-5' />
             <h3>Use i-Wish Wallet</h3>
           </div>
@@ -78,26 +78,32 @@ const Payment = ({ setPage, items }) => {
             <img src={paystack} alt='card' className='w-5' />
             <img src={paystack2} alt='card' className='' />
           </div>
-          <div className='flex items-center space-x-4 my-8'>
+          <div className='flex items-center space-x-4 my-12'>
             <hr className='border-1 border-gray-400 w-full' />
             <h4>or</h4>
             <hr className='border-1 border-gray-400 w-full' />
           </div>
-          <label htmlFor='number'>Card Number</label>
+          <label htmlFor='number' className='my-2 block'>
+            Card Number
+          </label>
           <input
             type='number'
             className='block w-full p-3 bg-gray-100 rounded-md'
           />
           <div className='grid grid-cols-2 gap-3 my-8'>
             <div>
-              <label htmlFor='number'>Exp Date</label>
+              <label htmlFor='number' className='my-2 block'>
+                Exp Date
+              </label>
               <input
                 type='text'
                 className='block w-full p-3 bg-gray-100 rounded-md'
               />
             </div>
             <div>
-              <label htmlFor='number'>CVV</label>
+              <label htmlFor='number' className='my-2 block'>
+                CVV
+              </label>
               <input
                 type='number'
                 className='block w-full p-3 bg-gray-100 rounded-md'

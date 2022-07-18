@@ -38,7 +38,7 @@ const Product = ({ setPage, items }) => {
             })}
           </div>
         </div>
-        <div>
+        <div className='md:w-[75%]'>
           <h4 className='font-bold text-2xl capitalize'>{title}</h4>
           <h4 className='font-bold text-lg my-1 capitalize'>
             <del>N</del> {price}

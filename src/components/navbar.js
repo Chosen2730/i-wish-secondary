@@ -28,13 +28,13 @@ const Nav = () => {
           <Link to='/' onClick={() => setNav(false)}>
             <h4 className='my-5'>Home</h4>
           </Link>
-          <Link to='feature' onClick={() => setNav(false)}>
+          <Link to='/feature' onClick={() => setNav(false)}>
             <h4 className='my-5'>Feature</h4>
           </Link>
-          <Link to='contact' onClick={() => setNav(false)}>
+          <Link to='/contact' onClick={() => setNav(false)}>
             <h4 className='my-5'>Contact Us</h4>
           </Link>
-          <Link to='vendor' onClick={() => setNav(false)}>
+          <Link to='/vendor' onClick={() => setNav(false)}>
             <h4 className='my-5'>Become a Vendor</h4>
           </Link>
         </div>

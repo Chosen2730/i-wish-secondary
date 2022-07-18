@@ -8,7 +8,7 @@ const Nav = () => {
   const [nav, setNav] = useState(false);
   return (
     <nav className=' w-full bg-white'>
-      <div className='max-w-7xl w-[90%] mx-auto flex py-2 sm:py-0 flex-col md:flex-row justify-between  md:items-center'>
+      <div className='max-w-7xl w-[90%] mx-auto flex py-4 sm:py-0 flex-col md:flex-row justify-between  md:items-center'>
         <div className='flex justify-between items-center'>
           <Link to='/'>
             <img className='w-20 object-contain' src={logo} alt='logo' />

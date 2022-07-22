@@ -24,7 +24,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className='flex justify-center capitalize gap-8 my-10 text-xs md:text-base font-bold text-gray-900 '>
+        <div className='flex justify-center capitalize gap-4 my-10 text-xs md:text-base font-bold text-gray-900 '>
           <Link to='/faq'>Faq</Link>
           <Link to='/privacy'>Privacy</Link>
           <Link to='/contact'>Contact us</Link>

@@ -3,8 +3,8 @@ import Home from "./pages";
 import FAQ from "./pages/faq";
 import Contact from "./pages/contact";
 import Error from "./pages/error";
-// import Nav from "./components/navbar";
-// import Footer from "./components/footer";
+import Privacy from "./pages/privacy";
+import Terms from "./pages/terms";
 
 function App() {
   return (
@@ -13,6 +13,8 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='contact' element={<Contact />} />
         <Route path='faq' element={<FAQ />} />
+        <Route path='terms' element={<Terms />} />
+        <Route path='privacy' element={<Privacy />} />
         <Route path='*' element={<Error />} />
       </Routes>
     </Router>

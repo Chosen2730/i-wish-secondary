@@ -1,7 +1,7 @@
 import { useState } from "react";
 import close from "../images/close.png";
-import cart from "../images/cart.png";
-import send from "../images/send.png";
+import cart from "../images/cart.svg";
+import send from "../images/send.svg";
 import { store } from "../data";
 
 const WishList = ({ setItems, setPage }) => {
@@ -27,9 +27,7 @@ const WishList = ({ setItems, setPage }) => {
                 alt=''
               />
               <div>
-                <h5 className='font-bold text-sm my-2 text-center capitalize'>
-                  {title}
-                </h5>
+                <h5 className='font-bold text-sm my-2 capitalize'>{title}</h5>
                 <button
                   className='py-3 px-6 my-4 rounded-lg bg-[#7805A7] text-sm text-white  w-full'
                   onClick={() => {
@@ -48,10 +46,10 @@ const WishList = ({ setItems, setPage }) => {
       <div
         className={`${modal ? "modal" : "modal hider"} overflow text-gray-900`}
       >
-        <div className='bg-white p-4 md:p-12 rounded-md w-[100%] max-w-lg sm:w-[80%] md:w-[65%]'>
+        <div className='bg-white p-4 md:p-12 rounded-md w-[100%] max-w-lg sm:w-[80%] md:w-[75%]'>
           <img
             src={close}
-            className='bg-[#7805A7] rounded-md p-2 ml-auto'
+            className='bg-[#7805A7] rounded-md p-2 ml-auto w-7'
             alt=''
             onClick={() => setModal(false)}
           />
@@ -63,7 +61,7 @@ const WishList = ({ setItems, setPage }) => {
               className='flex flex-col items-center rounded-md shadow-md p-3 cursor-pointer hover:scale-105 transition select-none'
               onClick={() => setPage(2)}
             >
-              <img src={cart} className='p-2 bg-[#7805A7] rounded-md' alt='' />
+              <img src={cart} className='rounded-md w-10' alt='' />
               <h5 className='font-bold text-lg my-3'>i-Wish Store</h5>
               <p className='text-xs sm:text-sm'>
                 Grant wish from the list of items from our wishlist store.
@@ -73,7 +71,7 @@ const WishList = ({ setItems, setPage }) => {
               className='flex flex-col items-center rounded-md shadow-md p-3 cursor-pointer hover:scale-105 transition select-none'
               onClick={() => setPage(6)}
             >
-              <img src={send} className='p-2 bg-gray-200 rounded-md' alt='' />
+              <img src={send} className='rounded-md w-10' alt='' />
               <h5 className='font-bold text-lg my-3'>Send money</h5>
               <p className='text-xs sm:text-sm'>
                 Grant wish from the list of items from our wishlist store.

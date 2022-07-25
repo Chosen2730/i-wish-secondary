@@ -1,11 +1,10 @@
-import { useState } from "react";
 import back from "../images/back.png";
 import pay from "../images/pay.png";
 import paystack from "../images/paystack.png";
 import paystack2 from "../images/paystack2.png";
 
 const Payment = ({ setPage, items }) => {
-  const { img, title, price, colors, desc } = items;
+  const { img, title, price } = items;
   const disc = Math.trunc(+price / 30);
   return (
     <div>
@@ -13,7 +12,7 @@ const Payment = ({ setPage, items }) => {
         className='select-none cursor-pointer flex items-center space-x-4'
         onClick={() => setPage(1)}
       >
-        <img src={back} alt='' />
+        <img src={back} alt='' className='w-3' />
         <h4 className='text-sm'>Back to Wishlist</h4>
       </div>
       <h2 className='font-bold text-3xl text-gray-800 my-6'>i-Wish Store</h2>
@@ -76,7 +75,7 @@ const Payment = ({ setPage, items }) => {
           </div>
           <div className='flex bg-gradient-to-r from-blue-600 via-blue-700 to-blue-400 items-center space-x-4 my-3 p-4 text-gray-50 rounded-md'>
             <img src={paystack} alt='card' className='w-5' />
-            <img src={paystack2} alt='card' className='' />
+            <img src={paystack2} alt='card' className='w-24' />
           </div>
           <div className='flex items-center space-x-4 my-12'>
             <hr className='border-1 border-gray-400 w-full' />

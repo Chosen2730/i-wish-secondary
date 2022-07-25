@@ -11,7 +11,7 @@ const SendMoney = ({ setPage, items }) => {
         className='select-none cursor-pointer flex items-center space-x-4'
         onClick={() => setPage(1)}
       >
-        <img src={back} alt='' />
+        <img src={back} alt='' className='w-3' />
         <h4 className='text-sm'>Back to Wishlist</h4>
       </div>
       <h2 className='font-bold text-3xl text-gray-800 my-6'>

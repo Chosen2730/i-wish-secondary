@@ -1,5 +1,5 @@
 import back from "../images/back.png";
-import star from "../images/star.png";
+import star from "../images/star.svg";
 
 const Success = ({ setPage }) => {
   return (
@@ -8,13 +8,13 @@ const Success = ({ setPage }) => {
         className='select-none cursor-pointer flex items-center space-x-4'
         onClick={() => setPage(1)}
       >
-        <img src={back} alt='' />
+        <img src={back} alt='' className='w-3' />
         <h4 className='text-sm'>Back to Wishlist</h4>
       </div>
       <h2 className='font-bold text-3xl text-gray-800 my-6'>i-Wish Store</h2>
 
       <div className='flex flex-col justify-center items-center mt-20'>
-        <img src={star} className='bg-[#FFCC00] p-8 rounded-lg w-48' alt='' />
+        <img src={star} className='p-8 rounded-lg' alt='' />
 
         <h2 className='font-bold my-3 capitalize text-xl'>
           Transaction successful

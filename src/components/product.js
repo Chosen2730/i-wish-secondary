@@ -11,7 +11,7 @@ const Product = ({ setPage, items }) => {
         className='select-none cursor-pointer flex items-center space-x-4'
         onClick={() => setPage(1)}
       >
-        <img src={back} alt='' />
+        <img src={back} alt='' className='w-3' />
         <h4 className='text-sm'>Back to Wishlist</h4>
       </div>
       <h2 className='font-bold text-3xl text-gray-800 my-6'>i-Wish Store</h2>
@@ -74,15 +74,8 @@ const Product = ({ setPage, items }) => {
       <div className='grid gap-4 sm:grid-cols-2 md:grid-cols-4'>
         {store.map(({ img, title, price, colors, desc }, i) => {
           return (
-            <div
-              key={i}
-              className='flex flex-col bg-gray-200 bg-gray-200 rounded-md'
-            >
-              <img
-                src={img[0]}
-                className='h-40 object-cover sm:h-32 w-full'
-                alt=''
-              />
+            <div key={i} className='flex flex-col bg-gray-200 rounded-md'>
+              <img src={img[0]} className='h-40 object-cover w-full' alt='' />
               <div className='p-2'>
                 <h5 className='font-bold text-sm my-2 capitalize'>{title}</h5>
                 <h5 className='font-extrabold text-lg my-2 capitalize'>
